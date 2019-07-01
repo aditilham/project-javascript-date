@@ -1,0 +1,113 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    background-color: black;
+    color: #eee;
+    background-image: url(./asset/images/footer_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -20px;
+    overflow: hidden;
+}
+
+.aegis {
+    background-image: url(./asset/images/aegis_fg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 160px;
+    width: 145px;
+    margin-top: -350px;
+}
+
+.aegis div {
+    position: absolute;
+    top: 60%;
+    left: -150px;
+    width: 430px;
+}
+
+h1 {
+    margin: 0 auto;
+    color: #eee;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.container p {
+    margin: 0 auto;
+    font-size: 12px;
+    width: 450px;
+}
+
+#clockdiv {
+    margin-top: 45px;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 100px;
+}
+
+#clockdiv>div {
+    padding: 10px;
+    border-radius: 15px;
+    background: #9b36df57;
+    display: inline-block;
+}
+
+#clockdiv div>span {
+    padding: 15px;
+    border-radius: 100px;
+    background: #580081;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 9px;
+    bottom: 0;
+    background-color: black;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+footer a {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+
+/* ------------------------------- */
