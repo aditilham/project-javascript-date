@@ -16,8 +16,8 @@ const theInternational = new Date("August 20, 2019 01:00:00").getTime();
 console.log(theInternational);
 
 let mainEvent = setInterval(function() {
-    let now = new Date().getTime();
-    let distance = theInternational - now;
+    let nows = new Date().getTime();
+    let distance = theInternational - nows;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
