@@ -1,6 +1,6 @@
 "use strict"
 
-const now = () => {
+const timeNow = () => {
     const date = new Date();
     const hour = date.getHours();
     const minute = date.getMinutes();
@@ -10,14 +10,14 @@ const now = () => {
         "today"
     ).innerHTML = `${hour} : ${minute} : ${second}`;
 };
-setInterval(now, 1000);
+setInterval(timeNow, 1000);
 
 const theInternational = new Date("August 20, 2019 01:00:00").getTime();
 console.log(theInternational);
 
 let mainEvent = setInterval(function() {
-    let nows = new Date().getTime();
-    let distance = theInternational - nows;
+    let timeToday = new Date().getTime();
+    let distance = theInternational - timeToday;
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
